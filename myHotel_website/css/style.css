@@ -46,6 +46,10 @@ Container class style */
   color: #f7c08a;
 }
 
+.text-gray {
+  color: #333;
+}
+
 .lead {
   font-size: 20px;
 }
@@ -68,31 +72,48 @@ Container class style */
   color: #333;
 }
 
-.btn-light{
+.btn-light {
   background: #f4f4f4;
-  color:#333;
+  color: #333;
 }
 
-.bg-light{
+.bg-light {
   background: #f4f4f4;
-  color:#333;
+  color: #333;
 }
 
-.bg-dark{
+.bg-dark {
   background: #333;
-  color:#fff;
+  color: #fff;
 }
 
-.bg-primray{
-  background:#f7c08a;
-  color:#fff;
+.bg-primray {
+  background: #f7c08a;
+  color: #fff;
 }
 
 /* Ova klasa nam sluzi za ocistit float tako da nam ne utjece na ponasanje footera (da ne dode do conflicta footer vs features */
-.clr{
-  clear:both;
+.clr {
+  clear: both;
 }
 
+.l-heading {
+  font-size: 40px;
+}
+
+/* PADDING */
+
+.py-1 {
+  padding: 10px 0;
+}
+
+.py-2 {
+  padding: 20px 0;
+}
+
+.py-3 {
+  padding: 30px 0;
+}
 
 /* _______________________________________________________________ UTILITY STYLING END */
 
@@ -159,50 +180,96 @@ Container class style */
 
 /* Home Info */
 
-.home-info{
-  height:400px;
+.home-info {
+  height: 400px;
 }
 
-.home-info .info-img{
-  float:left;
-  width:50%;
+.home-info .info-img {
+  float: left;
+  width: 50%;
   background: url(../img/photo-1.jpg) no-repeat;
   min-height: 100%;
 }
 
-.home-info .info-content{
-
-float:right;
-width:50%;
-height: 100%;
-text-align: center;
-padding:50px 30px;
-overflow:hidden;
-background: #333;
-color:#fff;
+.home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+  background: #333;
+  color: #fff;
 }
 
-.home-info .info-content p{
+.home-info .info-content p {
   padding-bottom: 30px;
 }
 
 /* Features */
-.box{
-  float:left;
+.box {
+  float: left;
   width: 33.3%;
-  padding:50px;
+  padding: 50px;
   text-align: center;
 }
 
-.box i{
+.box i {
   margin-bottom: 10px;
+}
+
+/* About Info */
+.about-info .info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+.about-info .info-right img {
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+/* Testemonials styles */
+
+.testemonials {
+  height: 600px;
+  background: url("../img/test-bg.jpg") no-repeat center center/cover;
+}
+
+.testemonials h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.testemonials .testemonial {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+.testemonials .testemonial img {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
 }
 
 /* Footer */
 
-.main-footer{
+.main-footer {
   text-align: center;
   background: #444;
-  color:#fff;
-  padding:20px;
+  color: #fff;
+  padding: 20px;
 }
