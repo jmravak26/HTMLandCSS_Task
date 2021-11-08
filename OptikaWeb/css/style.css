@@ -1,0 +1,303 @@
+/* Reset of page */
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizeing -> ako je nesto odmaknuto 50px bez box-sizinga bi bilo 50px + padding ili margin od drugog box-align
+    ovako kada je box-sizing:border-box stopi se jedno u drugo tj. ukupno sve zajedno je 50px */
+  box-sizing: border-box;
+}
+
+/* Main styling */
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/*
+UTILITY STYLING - stiliziranje vezano za vise stvari kroz cilu stranicu, a ne za određenu sekciju
+
+Container class style */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+/* Text, btn and background Styling */
+
+.text-primary {
+  color: #f7c08a;
+}
+
+.text-gray {
+  color: #333;
+}
+
+.lead {
+  font-size: 20px;
+}
+.lead::first-letter {
+  font-size: 30px;
+  color: #f7c08a;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-primray {
+  background: #f7c08a;
+  color: #fff;
+}
+
+/* Ova klasa nam sluzi za ocistit float tako da nam ne utjece na ponasanje footera (da ne dode do conflicta footer vs features */
+.clr {
+  clear: both;
+}
+
+.l-heading {
+  font-size: 40px;
+}
+
+/* PADDING */
+
+.py-1 {
+  padding: 10px 0;
+}
+
+.py-2 {
+  padding: 20px 0;
+}
+
+.py-3 {
+  padding: 30px 0;
+}
+
+/* _______________________________________________________________ UTILITY STYLING END */
+
+/* Styling of navigation bar */
+
+.navbar {
+  background-color: #333;
+  color: white;
+  /* Overflow je da se background pokazuje uvijek */
+  overflow: auto;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  float: right;
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+.navbar ul li a:hover,
+.navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
+}
+
+/* Showcase styling */
+
+.showcase {
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 600px;
+}
+
+.showcase .showcase-content {
+  color: white;
+  text-align: center;
+  padding-top: 170px;
+}
+
+.showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+.showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+/* Home Info */
+
+.home-info {
+  height: 400px;
+}
+
+.home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url(../img/photo-1.jpg) no-repeat;
+  min-height: 100%;
+}
+
+.home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+  background: #333;
+  color: #fff;
+}
+
+.home-info .info-content p {
+  padding-bottom: 30px;
+}
+
+/* Features */
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+/* About Info */
+.about-info .info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+.about-info .info-right img {
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+/* Testemonials styles */
+
+.testemonials {
+  height: 600px;
+  background: url("../img/test-bg.jpg") no-repeat center center/cover;
+}
+
+.testemonials h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.testemonials .testemonial {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+.testemonials .testemonial img {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Contact Styling */
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+
+.contact-form textarea {
+  height: 200px;
+}
+
+/* Footer */
+
+.main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
