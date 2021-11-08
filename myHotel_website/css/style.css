@@ -40,7 +40,7 @@ Container class style */
   padding: 0 20px;
 }
 
-/* Text, btn Styling */
+/* Text, btn and background Styling */
 
 .text-primary {
   color: #f7c08a;
@@ -71,6 +71,26 @@ Container class style */
 .btn-light{
   background: #f4f4f4;
   color:#333;
+}
+
+.bg-light{
+  background: #f4f4f4;
+  color:#333;
+}
+
+.bg-dark{
+  background: #333;
+  color:#fff;
+}
+
+.bg-primray{
+  background:#f7c08a;
+  color:#fff;
+}
+
+/* Ova klasa nam sluzi za ocistit float tako da nam ne utjece na ponasanje footera (da ne dode do conflicta footer vs features */
+.clr{
+  clear:both;
 }
 
 
@@ -164,4 +184,25 @@ color:#fff;
 
 .home-info .info-content p{
   padding-bottom: 30px;
+}
+
+/* Features */
+.box{
+  float:left;
+  width: 33.3%;
+  padding:50px;
+  text-align: center;
+}
+
+.box i{
+  margin-bottom: 10px;
+}
+
+/* Footer */
+
+.main-footer{
+  text-align: center;
+  background: #444;
+  color:#fff;
+  padding:20px;
 }
