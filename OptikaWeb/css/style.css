@@ -100,6 +100,7 @@ Container class style */
 
 .l-heading {
   font-size: 40px;
+  line-height: 1.2;
 }
 
 /* PADDING */
@@ -135,7 +136,7 @@ Container class style */
   color: #f7c08a;
 }
 
-.navbar h1 {
+.navbar .logo {
   float: left;
   padding-top: 20px;
 }
@@ -161,9 +162,9 @@ Container class style */
 }
 
 /* Skrivanje prikaza kontakta, jer jos nije dovršen za punu upotrebu */
-.navbar ul li a.show-contact {
+/* .navbar ul li a.show-contact {
   display: none;
-}
+} */
 
 /* Header styling */
 
@@ -199,7 +200,7 @@ Container class style */
 /* Home Info */
 
 .home-info {
-  height: 400px;
+  height: 450px;
 }
 
 .home-info .info-img {
@@ -259,7 +260,7 @@ Container class style */
 /* Testemonials styles */
 
 .testemonials {
-  height: 600px;
+  height: 100%;
   background: url("../imgOptika/ante-gaspar-gospin-kip-na-starome-gradu-sinj_0.jpg")
     no-repeat center center/cover;
 }
