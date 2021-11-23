@@ -1,6 +1,8 @@
 /* Font Style - Importano sa Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
+/* ________________________________________________________________________________________________ */
+
 /* Reset of all default styles, after that setup of OUR custom styles */
 * {
   box-sizing: border-box;
@@ -38,6 +40,7 @@ p {
 img {
   width: 100%;
 }
+
 /* ________________________________________________________________________________________________ */
 
 /* Navbar */
@@ -76,6 +79,59 @@ img {
 
 .navbar .logo {
   font-weight: 400;
+}
+
+/* ________________________________________________________________________________________________ */
+
+/* Header */
+
+.hero {
+  background: url("../images/home/showcase.jpg") no-repeat center center/cover;
+  /* 100vh means something like width:100% but you can't do that with height like that, so we use 100vh (viewport) */
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero .content {
+  display: flex;
+  /* Property which sets children to column instead row (changes align-item and justify-content functions BEWARE!) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* If parent is height:100vh we need to set height:100% in child to be able to move with align and justify */
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  font-size: 55px;
+}
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  /* Top LR Bot */
+  margin: 20px 0 30px;
+}
+
+/* Sudo selector to make background img overlay */
+.hero::before {
+  content: "";
+  /* Postion absolute (child) because .hero (parent) is position relative */
+  position: absolute;
+  /* "Sets curtain from upper left corner to 100% width+height on bacground" */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* We set .hero::before to overlay 60%, but we want only for img to be affected. With this we affect only BG img */
+.hero * {
+  z-index: 10;
 }
 
 /* ________________________________________________________________________________________________ */
