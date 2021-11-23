@@ -1,0 +1,81 @@
+/* Font Style - Importano sa Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+/* Reset of all default styles, after that setup of OUR custom styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  /* Margin TOP and BOT 10px, L and R 0 */
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+/* ________________________________________________________________________________________________ */
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  /* flex-direction:row is default for display:flex, but I wrote it for better understanding */
+  flex-direction: row;
+  /* Property for align on UP and DOWN axis */
+  align-items: center;
+  /* Property for align LEFT and RIGHT (main axis) */
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  /* Classic size of Navbar height */
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+.navbar a:hover {
+  border-bottom: #28a745 2px solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .logo {
+  font-weight: 400;
+}
+
+/* ________________________________________________________________________________________________ */
