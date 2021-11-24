@@ -62,6 +62,13 @@ img {
   position: fixed;
   top: 0px;
   padding: 0 30px;
+
+  /* Animation used for JS transition */
+  transition: 1s ease-in;
+}
+
+.navbar.top {
+  background: transparent;
 }
 
 .navbar a {
@@ -212,23 +219,22 @@ img {
 
 /* Post */
 
-.post{
+.post {
   padding: 50px 30px;
 }
 
-.post h2{
+.post h2 {
   font-size: 40px;
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: #ccc solid 1px;
-
 }
 
-.post .meta{
+.post .meta {
   margin-bottom: 30px;
 }
 
-.post img{
+.post img {
   width: 300px;
   border-radius: 50%;
   display: block;
