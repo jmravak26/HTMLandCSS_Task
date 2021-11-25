@@ -71,6 +71,7 @@ img {
   background: transparent;
 }
 
+/* Make space between list items, also text color set to white*/
 .navbar a {
   color: #fff;
   padding: 10px 20px;
@@ -80,6 +81,7 @@ img {
   border-bottom: #28a745 2px solid;
 }
 
+/* Display list as a row */
 .navbar ul {
   display: flex;
 }
@@ -102,7 +104,7 @@ img {
 
 .hero.blog {
   background: url("../images/home/blog.jpg") no-repeat center center/cover;
-  height: 30vh;
+  height: 45vh;
 }
 
 .hero .content {
@@ -210,6 +212,17 @@ img {
   outline-color: #28a745;
 }
 
+.callback-form textarea {
+  width: 100%;
+  padding: 4px;
+  height: 100px;
+  border: #f5f5f5 1px solit;
+}
+
+.callback-form textarea:focus {
+  outline-color: #28a745;
+}
+
 .callback-form .btn {
   padding: 12px 0;
   margin-top: 20px;
@@ -263,6 +276,33 @@ img {
 
 .footer .social > * {
   margin-right: 30px;
+}
+
+/* ________________________________________________________________________________________________ */
+
+/* Success Page */
+
+.navbar-success {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+}
+
+.success-message {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.footer-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
 }
 
 /* ________________________________________________________________________________________________ */

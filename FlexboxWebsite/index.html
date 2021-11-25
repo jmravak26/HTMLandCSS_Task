@@ -254,7 +254,7 @@
           <div class="column">
             <div class="column-2 bg-light">
               <h2>Request Callback</h2>
-              <form action="" class="callback-form">
+              <form action="process.php" method="POST" class="callback-form">
                 <div class="form-control">
                   <label for="name"></label>
                   <input
@@ -264,13 +264,14 @@
                     placeholder="Enter name:"
                   />
                 </div>
+
                 <div class="form-control">
                   <label for="email"></label>
                   <input
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Enter email: "
+                    placeholder="Enter email:"
                   />
                 </div>
                 <div class="form-control">
@@ -279,10 +280,20 @@
                     type="text"
                     name="phone"
                     id="phone"
-                    placeholder="Enter phone: "
+                    placeholder="Enter phone:"
                   />
                 </div>
+                <div class="form-control">
+                  <label for="message"></label>
+                  <textarea
+                    type="text"
+                    name="message"
+                    id="comment"
+                    placeholder="Enter message here:"
+                  ></textarea>
+                </div>
                 <input type="submit" value="Send" id="submit" class="btn" />
+                <input type="reset" value="Reset" id="reset" class="btn" />
               </form>
             </div>
           </div>
@@ -329,7 +340,7 @@
       };
 
       // Smooth Scrolling click on hash
-      $("#navbar a, .btn").on("click", function (e) {
+      $("#navbar a").on("click", function (e) {
         if (this.hash !== "") {
           e.preventDefault();
 
